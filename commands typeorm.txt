@@ -1,0 +1,5 @@
+Cria uma migration para configurar a tabela 
+# yarn typeorm migration:create -n CreateProducts
+
+Executa as Migrations
+# yarn typeorm migration:run 

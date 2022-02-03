@@ -1,0 +1,18 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "docker",
+  "database": "frei_db",
+  "synchronize": false,
+  "logging": false,
+  "entities": ["./src/shared/typeorm/entity/**/*.ts"],
+  "migrations": ["./src/shared/typeorm/migrations/**/.ts"],
+  "subscribers": ["./src/shared/typeorm/subscriber/**/.ts"],
+  "cli": {
+    "entitiesDir": "./src/shared/typeorm/entity",
+    "migrationsDir": "./src/shared/typeorm/migration",
+    "subscribersDir": "./src/shared/typeorm/subscriber"
+  }
+}
